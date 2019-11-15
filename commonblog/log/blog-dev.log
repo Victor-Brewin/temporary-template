@@ -1,0 +1,588 @@
+2019-11-15 16:32:02.830  INFO 8100 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 8100 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 16:32:02.831  INFO 8100 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 16:32:03.760  INFO 8100 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50c4c5ca: startup date [Fri Nov 15 16:32:03 CST 2019]; root of context hierarchy
+2019-11-15 16:32:07.603  INFO 8100 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 16:32:07.620  INFO 8100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:32:07.624  INFO 8100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 16:32:07.837  INFO 8100 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:32:07.837  INFO 8100 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4081 ms
+2019-11-15 16:32:08.149  INFO 8100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 16:32:08.150  INFO 8100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 16:32:08.150  INFO 8100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 16:32:08.150  INFO 8100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 16:32:08.152  INFO 8100 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 16:32:08.152  INFO 8100 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 16:32:09.648  INFO 8100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:32:09.697  INFO 8100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 16:32:09.922  INFO 8100 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-15 16:32:09.924  INFO 8100 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-15 16:32:09.927  INFO 8100 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-15 16:32:10.028  INFO 8100 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-15 16:32:10.268  INFO 8100 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 16:32:10.568  WARN 8100 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.HibernateException: Unsupported property type for generator annotation @CreationTimestamp
+2019-11-15 16:32:10.577  INFO 8100 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-15 16:32:10.637  INFO 8100 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-11-15 16:32:10.764 ERROR 8100 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.HibernateException: Unsupported property type for generator annotation @CreationTimestamp
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.brewin.common.CommonApplication.main(CommonApplication.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+Caused by: org.hibernate.HibernateException: Unsupported property type for generator annotation @CreationTimestamp
+	at org.hibernate.tuple.CreationTimestampGeneration.initialize(CreationTimestampGeneration.java:44) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.tuple.CreationTimestampGeneration.initialize(CreationTimestampGeneration.java:22) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.instantiateAndInitializeValueGeneration(PropertyBinder.java:415) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.getValueGenerationFromAnnotation(PropertyBinder.java:383) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.getValueGenerationFromAnnotations(PropertyBinder.java:348) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.determineValueGenerationStrategy(PropertyBinder.java:323) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.makeProperty(PropertyBinder.java:269) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyAndValue(PropertyBinder.java:189) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.annotations.PropertyBinder.makePropertyValueAndBind(PropertyBinder.java:199) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:2225) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:911) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:738) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:245) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:222) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 21 common frames omitted
+
+2019-11-15 16:34:32.053  INFO 5740 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 5740 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 16:34:32.055  INFO 5740 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 16:34:32.484  INFO 5740 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20e5ae0b: startup date [Fri Nov 15 16:34:32 CST 2019]; root of context hierarchy
+2019-11-15 16:34:35.202  INFO 5740 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 16:34:35.216  INFO 5740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:34:35.219  INFO 5740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 16:34:35.407  INFO 5740 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:34:35.408  INFO 5740 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2928 ms
+2019-11-15 16:34:35.673  INFO 5740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 16:34:35.673  INFO 5740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 16:34:35.674  INFO 5740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 16:34:35.674  INFO 5740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 16:34:35.676  INFO 5740 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 16:34:35.679  INFO 5740 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 16:34:36.653  INFO 5740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:34:36.681  INFO 5740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 16:34:36.774  INFO 5740 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-15 16:34:36.777  INFO 5740 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-15 16:34:36.780  INFO 5740 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-15 16:34:36.841  INFO 5740 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-15 16:34:36.983  INFO 5740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 16:34:37.304  WARN 5740 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2019-11-15 16:34:37.310  INFO 5740 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-15 16:34:37.326  INFO 5740 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-11-15 16:34:37.338 ERROR 5740 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.brewin.common.CommonApplication.main(CommonApplication.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 21 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: java.util.List, at table: role, for columns: [org.hibernate.mapping.Column(authorities)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:431) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:398) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.mapping.Property.isValid(Property.java:225) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:595) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:265) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:329) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:443) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	... 27 common frames omitted
+
+2019-11-15 16:36:59.021  INFO 13388 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 13388 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 16:36:59.023  INFO 13388 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 16:36:59.413  INFO 13388 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50c4c5ca: startup date [Fri Nov 15 16:36:59 CST 2019]; root of context hierarchy
+2019-11-15 16:37:02.144  INFO 13388 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 16:37:02.157  INFO 13388 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:37:02.158  INFO 13388 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 16:37:02.378  INFO 13388 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:37:02.378  INFO 13388 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2971 ms
+2019-11-15 16:37:02.645  INFO 13388 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 16:37:02.646  INFO 13388 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 16:37:02.646  INFO 13388 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 16:37:02.646  INFO 13388 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 16:37:02.648  INFO 13388 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 16:37:02.648  INFO 13388 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 16:37:03.615  INFO 13388 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:37:03.634  INFO 13388 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 16:37:03.755  INFO 13388 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-15 16:37:03.759  INFO 13388 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-15 16:37:03.762  INFO 13388 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-15 16:37:03.822  INFO 13388 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-15 16:37:03.972  INFO 13388 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 16:37:04.713  WARN 13388 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2019-11-15 16:37:04.719  INFO 13388 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-15 16:37:04.734  INFO 13388 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-11-15 16:37:04.745 ERROR 13388 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.brewin.common.CommonApplication.main(CommonApplication.java:12) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359) ~[spring-orm-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 21 common frames omitted
+Caused by: org.hibernate.loader.MultipleBagFetchException: cannot simultaneously fetch multiple bags: [com.brewin.common.entity.User.roles, com.brewin.common.entity.User.departments]
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadQueryDetails.generate(AbstractLoadQueryDetails.java:178) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails.<init>(EntityLoadQueryDetails.java:89) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.loader.plan.exec.internal.BatchingLoadQueryDetailsFactory.makeEntityLoadQueryDetails(BatchingLoadQueryDetailsFactory.java:61) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.<init>(AbstractLoadPlanBasedEntityLoader.java:82) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:103) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader.<init>(EntityLoader.java:38) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byUniqueKey(EntityLoader.java:83) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.loader.entity.plan.EntityLoader$Builder.byPrimaryKey(EntityLoader.java:77) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.loader.entity.plan.AbstractBatchingEntityLoaderBuilder.buildNonBatchingLoader(AbstractBatchingEntityLoaderBuilder.java:30) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.loader.entity.BatchingEntityLoaderBuilder.buildLoader(BatchingEntityLoaderBuilder.java:59) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2306) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createEntityLoader(AbstractEntityPersister.java:2328) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.createLoaders(AbstractEntityPersister.java:3928) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.postInstantiate(AbstractEntityPersister.java:3910) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:446) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) ~[hibernate-core-5.0.12.Final.jar:5.0.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879) ~[hibernate-entitymanager-5.0.12.Final.jar:5.0.12.Final]
+	... 27 common frames omitted
+
+2019-11-15 16:52:19.857  INFO 13336 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 13336 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 16:52:19.859  INFO 13336 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 16:52:20.267  INFO 13336 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50c4c5ca: startup date [Fri Nov 15 16:52:20 CST 2019]; root of context hierarchy
+2019-11-15 16:52:24.429  INFO 13336 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 16:52:24.449  INFO 13336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:52:24.452  INFO 13336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 16:52:24.679  INFO 13336 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:52:24.679  INFO 13336 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4416 ms
+2019-11-15 16:52:25.030  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 16:52:25.031  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 16:52:25.032  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 16:52:25.032  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 16:52:25.034  INFO 13336 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 16:52:25.036  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 16:52:26.204  INFO 13336 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:52:26.232  INFO 13336 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 16:52:26.365  INFO 13336 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-15 16:52:26.367  INFO 13336 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-15 16:52:26.369  INFO 13336 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-15 16:52:26.439  INFO 13336 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-15 16:52:26.603  INFO 13336 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 16:52:27.619  INFO 13336 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-11-15 16:52:27.637  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: department
+2019-11-15 16:52:27.639  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: department
+2019-11-15 16:52:27.953  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: role
+2019-11-15 16:52:27.955  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: role
+2019-11-15 16:52:28.293  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user
+2019-11-15 16:52:28.295  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user
+2019-11-15 16:52:28.731  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user_departments
+2019-11-15 16:52:28.733  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user_departments
+2019-11-15 16:52:28.976  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user_roles
+2019-11-15 16:52:28.978  INFO 13336 --- [restartedMain] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user_roles
+2019-11-15 16:52:49.127  INFO 13336 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:52:51.727  INFO 13336 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50c4c5ca: startup date [Fri Nov 15 16:52:20 CST 2019]; root of context hierarchy
+2019-11-15 16:52:51.848  INFO 13336 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-15 16:52:51.851  INFO 13336 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-15 16:52:51.906  INFO 13336 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:52:51.908  INFO 13336 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:52:52.217  INFO 13336 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:52:53.594  INFO 13336 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 54f19099-4004-4095-9fd3-2c958cfa0d6e
+
+2019-11-15 16:52:53.669  INFO 13336 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-11-15 16:52:53.788  INFO 13336 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68662771, org.springframework.security.web.context.SecurityContextPersistenceFilter@19f6a782, org.springframework.security.web.header.HeaderWriterFilter@2de7de0b, org.springframework.security.web.authentication.logout.LogoutFilter@13c3e47b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7ab1d5dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48141c48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a6ae493, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a23c65b, org.springframework.security.web.session.SessionManagementFilter@5fc4d6f2, org.springframework.security.web.access.ExceptionTranslationFilter@7d141efe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17bae04d]
+2019-11-15 16:52:54.029  INFO 13336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:52:54.098  INFO 13336 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-15 16:52:54.195  INFO 13336 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2019-11-15 16:52:54.213  INFO 13336 --- [restartedMain] com.brewin.common.CommonApplication      : Started CommonApplication in 34.857 seconds (JVM running for 35.523)
+2019-11-15 16:55:56.952  INFO 13336 --- [Thread-7] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50c4c5ca: startup date [Fri Nov 15 16:52:20 CST 2019]; root of context hierarchy
+2019-11-15 16:55:56.968  INFO 13336 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-15 16:55:56.973  INFO 13336 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:55:57.602  INFO 13336 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 13336 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 16:55:57.603  INFO 13336 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 16:55:57.605  INFO 13336 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@325b52a9: startup date [Fri Nov 15 16:55:57 CST 2019]; root of context hierarchy
+2019-11-15 16:55:58.391  INFO 13336 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 16:55:58.392  INFO 13336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:55:58.393  INFO 13336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 16:55:58.419  INFO 13336 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:55:58.420  INFO 13336 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 815 ms
+2019-11-15 16:55:58.467  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 16:55:58.468  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 16:55:58.469  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 16:55:58.469  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 16:55:58.470  INFO 13336 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 16:55:58.471  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 16:55:58.714  INFO 13336 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:55:58.714  INFO 13336 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 16:55:58.727  INFO 13336 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 16:55:58.838  INFO 13336 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-11-15 16:55:59.045  INFO 13336 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:55:59.263  INFO 13336 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@325b52a9: startup date [Fri Nov 15 16:55:57 CST 2019]; root of context hierarchy
+2019-11-15 16:55:59.274  INFO 13336 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-15 16:55:59.276  INFO 13336 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-15 16:55:59.287  INFO 13336 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:55:59.288  INFO 13336 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:55:59.301  INFO 13336 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:55:59.396  INFO 13336 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 01628bbb-1964-41d6-9867-bcb79d91aaef
+
+2019-11-15 16:55:59.400  INFO 13336 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-11-15 16:55:59.407  INFO 13336 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@415b5cc6, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ff894de, org.springframework.security.web.header.HeaderWriterFilter@243d6fa, org.springframework.security.web.authentication.logout.LogoutFilter@7ee7fb01, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@542ce67, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5faa39c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4342c0c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55864331, org.springframework.security.web.session.SessionManagementFilter@3840bb02, org.springframework.security.web.access.ExceptionTranslationFilter@68f11870, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ce55d5e]
+2019-11-15 16:55:59.442  INFO 13336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:55:59.506  INFO 13336 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-15 16:55:59.543  INFO 13336 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2019-11-15 16:55:59.558  INFO 13336 --- [restartedMain] com.brewin.common.CommonApplication      : Started CommonApplication in 2.003 seconds (JVM running for 220.868)
+2019-11-15 16:56:02.890  INFO 13336 --- [Thread-11] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@325b52a9: startup date [Fri Nov 15 16:55:57 CST 2019]; root of context hierarchy
+2019-11-15 16:56:02.893  INFO 13336 --- [Thread-11] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-15 16:56:02.897  INFO 13336 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:56:03.802  INFO 13336 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 13336 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 16:56:03.805  INFO 13336 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 16:56:03.822  INFO 13336 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53beebe1: startup date [Fri Nov 15 16:56:03 CST 2019]; root of context hierarchy
+2019-11-15 16:56:05.073  INFO 13336 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 16:56:05.075  INFO 13336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:56:05.075  INFO 13336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 16:56:05.132  INFO 13336 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:56:05.138  INFO 13336 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1316 ms
+2019-11-15 16:56:05.227  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 16:56:05.229  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 16:56:05.230  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 16:56:05.232  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 16:56:05.233  INFO 13336 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 16:56:05.234  INFO 13336 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 16:56:05.448  INFO 13336 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:56:05.448  INFO 13336 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 16:56:05.459  INFO 13336 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 16:56:05.541  INFO 13336 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-11-15 16:56:05.704  INFO 13336 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:56:05.897  INFO 13336 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53beebe1: startup date [Fri Nov 15 16:56:03 CST 2019]; root of context hierarchy
+2019-11-15 16:56:05.905  INFO 13336 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-15 16:56:05.905  INFO 13336 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-15 16:56:05.912  INFO 13336 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:56:05.913  INFO 13336 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:56:05.922  INFO 13336 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:56:05.984  INFO 13336 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 60d6174a-a482-47b0-8be4-3e814f8dc0de
+
+2019-11-15 16:56:05.989  INFO 13336 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-11-15 16:56:05.996  INFO 13336 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2421fd12, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e3ea584, org.springframework.security.web.header.HeaderWriterFilter@4275d310, org.springframework.security.web.authentication.logout.LogoutFilter@79bc4fee, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5285c7d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5091e686, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c9052d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2df5b75f, org.springframework.security.web.session.SessionManagementFilter@7c7723c8, org.springframework.security.web.access.ExceptionTranslationFilter@6aec99bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5458002f]
+2019-11-15 16:56:06.032  INFO 13336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:56:06.069  INFO 13336 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-15 16:56:06.084  INFO 13336 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2019-11-15 16:56:06.088  INFO 13336 --- [restartedMain] com.brewin.common.CommonApplication      : Started CommonApplication in 2.504 seconds (JVM running for 227.398)
+2019-11-15 16:56:20.335  INFO 13336 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-15 16:56:20.335  INFO 13336 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-15 16:56:20.398  INFO 13336 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 62 ms
+2019-11-15 16:57:46.729  INFO 13396 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 13396 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 16:57:46.731  INFO 13396 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 16:57:47.127  INFO 13396 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@85a7dea: startup date [Fri Nov 15 16:57:47 CST 2019]; root of context hierarchy
+2019-11-15 16:57:50.266  INFO 13396 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 16:57:50.285  INFO 13396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:57:50.289  INFO 13396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 16:57:50.510  INFO 13396 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:57:50.511  INFO 13396 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3387 ms
+2019-11-15 16:57:50.790  INFO 13396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 16:57:50.791  INFO 13396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 16:57:50.791  INFO 13396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 16:57:50.792  INFO 13396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 16:57:50.793  INFO 13396 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 16:57:50.794  INFO 13396 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 16:57:51.784  INFO 13396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:57:51.813  INFO 13396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 16:57:51.939  INFO 13396 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-15 16:57:51.945  INFO 13396 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-15 16:57:51.948  INFO 13396 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-15 16:57:52.001  INFO 13396 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-15 16:57:52.133  INFO 13396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 16:57:52.747  INFO 13396 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-11-15 16:57:52.980  INFO 13396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:57:53.846  INFO 13396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@85a7dea: startup date [Fri Nov 15 16:57:47 CST 2019]; root of context hierarchy
+2019-11-15 16:57:53.964  INFO 13396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-15 16:57:53.966  INFO 13396 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-15 16:57:54.025  INFO 13396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:57:54.026  INFO 13396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:57:54.110  INFO 13396 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:57:54.875  INFO 13396 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: d1236199-bdb4-47c2-bc5d-c5ce57c090fb
+
+2019-11-15 16:57:54.949  INFO 13396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-11-15 16:57:55.057  INFO 13396 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@265e6cd2, org.springframework.security.web.context.SecurityContextPersistenceFilter@524f39ad, org.springframework.security.web.header.HeaderWriterFilter@36ba2dcb, org.springframework.security.web.authentication.logout.LogoutFilter@455b5c65, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@21390fab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@171a491, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@572ca44a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@87b429e, org.springframework.security.web.session.SessionManagementFilter@7c17b9bd, org.springframework.security.web.access.ExceptionTranslationFilter@3db66c2d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49fc54e5]
+2019-11-15 16:57:55.263  INFO 13396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:57:55.327  INFO 13396 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-15 16:57:55.406  INFO 13396 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2019-11-15 16:57:55.425  INFO 13396 --- [restartedMain] com.brewin.common.CommonApplication      : Started CommonApplication in 9.168 seconds (JVM running for 9.962)
+2019-11-15 16:58:07.290  INFO 13396 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-15 16:58:07.290  INFO 13396 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-15 16:58:07.335  INFO 13396 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2019-11-15 16:59:15.589  INFO 13396 --- [Thread-7] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@85a7dea: startup date [Fri Nov 15 16:57:47 CST 2019]; root of context hierarchy
+2019-11-15 16:59:15.596  INFO 13396 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-15 16:59:15.604  INFO 13396 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:59:49.869  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 11044 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 16:59:49.871  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 16:59:50.232  INFO 11044 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2db7fe81: startup date [Fri Nov 15 16:59:50 CST 2019]; root of context hierarchy
+2019-11-15 16:59:52.982  INFO 11044 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 16:59:53.002  INFO 11044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:59:53.006  INFO 11044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 16:59:53.180  INFO 11044 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:59:53.180  INFO 11044 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2957 ms
+2019-11-15 16:59:53.433  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 16:59:53.434  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 16:59:53.435  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 16:59:53.436  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 16:59:53.438  INFO 11044 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 16:59:53.442  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 16:59:54.357  INFO 11044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:59:54.385  INFO 11044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 16:59:54.507  INFO 11044 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-15 16:59:54.510  INFO 11044 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-15 16:59:54.523  INFO 11044 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-15 16:59:54.579  INFO 11044 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-15 16:59:54.746  INFO 11044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 16:59:55.376  INFO 11044 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-11-15 16:59:55.651  INFO 11044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 16:59:56.435  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2db7fe81: startup date [Fri Nov 15 16:59:50 CST 2019]; root of context hierarchy
+2019-11-15 16:59:56.534  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-15 16:59:56.538  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-15 16:59:56.586  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:59:56.594  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:59:56.650  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 16:59:57.259  INFO 11044 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: bbfe2b3f-dab9-4b85-9689-598947d94da9
+
+2019-11-15 16:59:57.320  INFO 11044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-11-15 16:59:57.417  INFO 11044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@314601ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@68b8e271, org.springframework.security.web.header.HeaderWriterFilter@78e1604, org.springframework.security.web.authentication.logout.LogoutFilter@126ebe1e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@216ea94e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2902e6ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60232e72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38c3678, org.springframework.security.web.session.SessionManagementFilter@581c7e27, org.springframework.security.web.access.ExceptionTranslationFilter@31ae9ce9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3d8bf1db]
+2019-11-15 16:59:57.593  INFO 11044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:59:57.652  INFO 11044 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-15 16:59:57.759  INFO 11044 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2019-11-15 16:59:57.770  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : Started CommonApplication in 8.369 seconds (JVM running for 9.001)
+2019-11-15 17:00:03.444  INFO 11044 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-15 17:00:03.445  INFO 11044 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-15 17:00:03.493  INFO 11044 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2019-11-15 17:02:09.503  INFO 11044 --- [Thread-7] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2db7fe81: startup date [Fri Nov 15 16:59:50 CST 2019]; root of context hierarchy
+2019-11-15 17:02:09.508  INFO 11044 --- [Thread-7] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-15 17:02:09.511  INFO 11044 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 17:02:10.162  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 11044 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 17:02:10.162  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 17:02:10.165  INFO 11044 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@98a268f: startup date [Fri Nov 15 17:02:10 CST 2019]; root of context hierarchy
+2019-11-15 17:02:10.956  INFO 11044 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 17:02:10.961  INFO 11044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 17:02:10.961  INFO 11044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 17:02:11.009  INFO 11044 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 17:02:11.011  INFO 11044 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 846 ms
+2019-11-15 17:02:11.065  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 17:02:11.068  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 17:02:11.068  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 17:02:11.069  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 17:02:11.069  INFO 11044 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 17:02:11.071  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 17:02:11.290  INFO 11044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 17:02:11.290  INFO 11044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 17:02:11.303  INFO 11044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 17:02:11.406  INFO 11044 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-11-15 17:02:11.594  INFO 11044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 17:02:11.840  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@98a268f: startup date [Fri Nov 15 17:02:10 CST 2019]; root of context hierarchy
+2019-11-15 17:02:11.856  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-15 17:02:11.858  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-15 17:02:11.875  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 17:02:11.876  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 17:02:11.893  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 17:02:11.983  INFO 11044 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 7a54f182-280f-4354-8f7e-5b5e72ba87ff
+
+2019-11-15 17:02:11.987  INFO 11044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-11-15 17:02:11.997  INFO 11044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f8c1db7, org.springframework.security.web.context.SecurityContextPersistenceFilter@14d78676, org.springframework.security.web.header.HeaderWriterFilter@27c39fd3, org.springframework.security.web.authentication.logout.LogoutFilter@49764f62, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@613a940c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5848a6b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@634e976f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@222c7704, org.springframework.security.web.session.SessionManagementFilter@14a7d6a2, org.springframework.security.web.access.ExceptionTranslationFilter@389e89af, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25e1e51f]
+2019-11-15 17:02:12.047  INFO 11044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 17:02:12.140  INFO 11044 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-15 17:02:12.170  INFO 11044 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2019-11-15 17:02:12.181  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : Started CommonApplication in 2.091 seconds (JVM running for 143.405)
+2019-11-15 17:02:21.150  INFO 11044 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-15 17:02:21.150  INFO 11044 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-15 17:02:21.155  INFO 11044 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2019-11-15 17:04:08.713  INFO 11044 --- [Thread-11] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@98a268f: startup date [Fri Nov 15 17:02:10 CST 2019]; root of context hierarchy
+2019-11-15 17:04:08.725  INFO 11044 --- [Thread-11] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-15 17:04:08.727  INFO 11044 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 17:04:09.343  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 11044 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 17:04:09.344  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 17:04:09.347  INFO 11044 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e059c49: startup date [Fri Nov 15 17:04:09 CST 2019]; root of context hierarchy
+2019-11-15 17:04:10.178  INFO 11044 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 17:04:10.179  INFO 11044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 17:04:10.179  INFO 11044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 17:04:10.246  INFO 11044 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 17:04:10.247  INFO 11044 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 900 ms
+2019-11-15 17:04:10.307  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 17:04:10.308  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 17:04:10.308  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 17:04:10.308  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 17:04:10.308  INFO 11044 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 17:04:10.309  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 17:04:10.545  INFO 11044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 17:04:10.545  INFO 11044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 17:04:10.562  INFO 11044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 17:04:10.662  INFO 11044 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-11-15 17:04:10.817  INFO 11044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 17:04:11.179  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e059c49: startup date [Fri Nov 15 17:04:09 CST 2019]; root of context hierarchy
+2019-11-15 17:04:11.191  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-15 17:04:11.192  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-15 17:04:11.219  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 17:04:11.219  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 17:04:11.248  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 17:04:11.339  INFO 11044 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 499b5547-c7d2-43ca-bc7a-30f6db6fd783
+
+2019-11-15 17:04:11.344  INFO 11044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-11-15 17:04:11.352  INFO 11044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49ab1bbb, org.springframework.security.web.context.SecurityContextPersistenceFilter@39614c5e, org.springframework.security.web.header.HeaderWriterFilter@2f42c76c, org.springframework.security.web.authentication.logout.LogoutFilter@67ed9d15, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@545d2e0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d2b699f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44ebb8f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c27132b, org.springframework.security.web.session.SessionManagementFilter@372290e1, org.springframework.security.web.access.ExceptionTranslationFilter@252c3451, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5db7a238]
+2019-11-15 17:04:11.406  INFO 11044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 17:04:11.481  INFO 11044 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-15 17:04:11.502  INFO 11044 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2019-11-15 17:04:11.509  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : Started CommonApplication in 2.23 seconds (JVM running for 262.74)
+2019-11-15 17:04:40.124  INFO 11044 --- [Thread-18] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e059c49: startup date [Fri Nov 15 17:04:09 CST 2019]; root of context hierarchy
+2019-11-15 17:04:40.139  INFO 11044 --- [Thread-18] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-11-15 17:04:40.142  INFO 11044 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 17:04:40.785  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : Starting CommonApplication on DESKTOP-PS2OPBR with PID 11044 (E:\code\brewinWorkSpace\commonblog\target\classes started by Brewin in E:\code\brewinWorkSpace\commonblog)
+2019-11-15 17:04:40.785  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : The following profiles are active: dev
+2019-11-15 17:04:40.787  INFO 11044 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4257bd3a: startup date [Fri Nov 15 17:04:40 CST 2019]; root of context hierarchy
+2019-11-15 17:04:41.456  INFO 11044 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 80 (http)
+2019-11-15 17:04:41.459  INFO 11044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 17:04:41.461  INFO 11044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-11-15 17:04:41.517  INFO 11044 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 17:04:41.519  INFO 11044 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 732 ms
+2019-11-15 17:04:41.566  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-15 17:04:41.567  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-15 17:04:41.567  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-15 17:04:41.567  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-15 17:04:41.577  INFO 11044 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-11-15 17:04:41.586  INFO 11044 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-15 17:04:41.762  INFO 11044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-15 17:04:41.762  INFO 11044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-15 17:04:41.774  INFO 11044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-15 17:04:41.869  INFO 11044 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-11-15 17:04:42.009  INFO 11044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-15 17:04:42.203  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4257bd3a: startup date [Fri Nov 15 17:04:40 CST 2019]; root of context hierarchy
+2019-11-15 17:04:42.210  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.brewin.common.controller.IndexController.hello()
+2019-11-15 17:04:42.211  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-15 17:04:42.212  INFO 11044 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-15 17:04:42.217  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 17:04:42.218  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 17:04:42.227  INFO 11044 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-15 17:04:42.288  INFO 11044 --- [restartedMain] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: f80fbaa5-bd7e-4551-9b5d-49d5e2efaf94
+
+2019-11-15 17:04:42.292  INFO 11044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-11-15 17:04:42.298  INFO 11044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7416a275, org.springframework.security.web.context.SecurityContextPersistenceFilter@20da2b66, org.springframework.security.web.header.HeaderWriterFilter@1ead3e39, org.springframework.security.web.authentication.logout.LogoutFilter@22039dc7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@53f313fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54fcf7f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@235747a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@df817af, org.springframework.security.web.session.SessionManagementFilter@698d0b00, org.springframework.security.web.access.ExceptionTranslationFilter@64c21211, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c04fc65]
+2019-11-15 17:04:42.336  INFO 11044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 17:04:42.386  INFO 11044 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-15 17:04:42.405  INFO 11044 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 80 (http)
+2019-11-15 17:04:42.409  INFO 11044 --- [restartedMain] com.brewin.common.CommonApplication      : Started CommonApplication in 1.676 seconds (JVM running for 293.64)
+2019-11-15 17:04:51.906  INFO 11044 --- [http-nio-80-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-15 17:04:51.906  INFO 11044 --- [http-nio-80-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-15 17:04:51.937  INFO 11044 --- [http-nio-80-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
